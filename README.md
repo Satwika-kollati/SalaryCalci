@@ -1,4 +1,4 @@
-# 🇮🇳 SalaryCalc 💰
+#  SalaryCalc 💰
 
 ## 🚀 Live Demo
 Check out the live demo here: [Salary Calculator](https://satwika-kollati.github.io/SalaryCalci/)
@@ -34,7 +34,7 @@ To download and use this project locally, follow these steps:
    cd SalaryCalci
    ```
 
-3.Open index.html in your web browser to view the project.
+3. Open index.html in your web browser to view the project.
 
 ## 💡 Key Calculations
 - Tax calculation based on the latest Indian tax slabs
