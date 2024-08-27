@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalaryCalc</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SalaryCalc</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="toggle-calculator">
+                <button id="toggleButton" onclick="toggleCalculator()">Switch to Required Base Calculator</button>
+            </div>
+            <div id="salaryCalculator" class="calculator">
+                <h2>Salary Calculator</h2>
+                <p class="description">Calculate your in-hand salary based on your CTC (Cost to Company)</p>
+                <div class="input-group">
+                    <label for="baseSalary">Enter Base Salary (CTC):</label>
+                    <input type="number" id="baseSalary" placeholder="Enter amount in INR">
+                </div>
+                <button onclick="calculateSalary()">Calculate</button>
+                <div id="result"></div>
+            </div>
+            <div id="ctcCalculator" class="calculator" style="display:none;">
+                <h2>CTC Calculator</h2>
+                <p class="description">Calculate the required CTC for your desired in-hand salary</p>
+                <div class="input-group">
+                    <label for="desiredSalary">Enter Desired Monthly Salary:</label>
+                    <input type="number" id="desiredSalary" placeholder="Enter amount in INR">
+                </div>
+                <button onclick="calculateCTC()">Calculate</button>
+                <div id="ctcResult"></div>
+            </div>
+            <h3>This website is based on Current Indian Tax Slab for year 2024-25</h3>
+            <table>
+                <tr>
+                    <th>Income Range (INR)</th>
+                    <th>Tax Rate</th>
+                </tr>
+                <tr>
+                    <td>0 - 3,00,000</td>
+                    <td>0%</td>
+                </tr>
+                <tr>
+                    <td>3,00,001 - 7,00,000</td>
+                    <td>5%</td>
+                </tr>
+                <tr>
+                    <td>7,00,001 - 10,00,000</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>10,00,001 - 12,00,000</td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>12,00,001 - 15,00,000</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>15,00,001 and above</td>
+                    <td>30%</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made by Satwika Kollati &copy; 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

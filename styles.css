@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    flex: 1;
+}
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 15px 0;
+    border-bottom: #e8491d 3px solid;
+}
+header h1 {
+    margin: 0;
+    padding: 0 20px;
+}
+.main-content {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calculator h2 {
+    align-self: flex-start;
+}
+.description {
+    align-self: flex-start;
+    color: #666;
+    margin-bottom: 15px;
+}
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+button {
+    background-color: #ec621d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #333333;
+}
+#result, #ctcResult {
+    margin-top: 20px;
+    font-weight: bold;
+    white-space: pre-line;
+    width: 100%;
+}
+.toggle-calculator {
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #35424a;
+    color: white;
+}
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+.result-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 20px;
+}
+.result-section h3 {
+    margin-top: 0;
+    color: #35424a;
+}
+.result-item {
+    margin-bottom: 10px;
+}
+.result-item strong {
+    color: #ec621d;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+    header h1 {
+        text-align: center;
+    }
+}
